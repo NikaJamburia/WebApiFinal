@@ -1,0 +1,622 @@
+{
+	"info": {
+		"_postman_id": "a1efd195-f9fb-4809-a52f-330e7e8f625e",
+		"name": "WebApi Final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:44359/api/authors/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWthIiwicm9sZXMiOlsiUkVHVUxBUl9PUEVSQVRPUiIsIkFETUlOX09QRVJBVE9SIl0sImlhdCI6MTU3NzgxNjM5NSwiZXhwIjoxNTc3ODU5NTk1fQ.N0MA7wnMSTe0tflUmNZ1wL8LvnbBhpBOSP9ACaPF_dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Author>\r\n    <BirthDate>1998-12-24T00:00:00</BirthDate>\r\n    <City>\r\n        <Id>3</Id>\r\n    </City>\r\n    <Country>\r\n        <Id>3</Id>\r\n    </Country>\r\n    <Email>Al@gmail.com</Email>\r\n    <FirstName>Alexandre</FirstName>\r\n    <Id>1</Id>\r\n    <IdentityNumber>11111111111</IdentityNumber>\r\n    <LastName>Diuma</LastName>\r\n    <gender>MALE</gender>\r\n    <telephone>12315151</telephone>\r\n</Author>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44359/api/authors/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"authors",
+						""
+					]
+				},
+				"description": "Post Author"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:44359/api/products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWthIiwicm9sZXMiOlsiUkVHVUxBUl9PUEVSQVRPUiIsIkFETUlOX09QRVJBVE9SIl0sImlhdCI6MTU3NzgxNjM5NSwiZXhwIjoxNTc3ODU5NTk1fQ.N0MA7wnMSTe0tflUmNZ1wL8LvnbBhpBOSP9ACaPF_dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Product>\r\n    <Address>rigi 1 taro 1</Address>\r\n    <Isnb>1111111112111</Isnb>\r\n    <NumberOfpages>100</NumberOfpages>\r\n    <ProductType>BOOK</ProductType>\r\n    <PublishDate>2019-12-12T00:00:00</PublishDate>\r\n    <Publisher>\r\n        <Id>10</Id>\r\n    </Publisher>\r\n    <Title>sami mushketeri 2</Title>\r\n</Product>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44359/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"products"
+					]
+				},
+				"description": "Post Products"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:44359/api/authors/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWthIiwicm9sZXMiOlsiUkVHVUxBUl9PUEVSQVRPUiIsIkFETUlOX09QRVJBVE9SIl0sImlhdCI6MTU3NzgxNjM5NSwiZXhwIjoxNTc3ODU5NTk1fQ.N0MA7wnMSTe0tflUmNZ1wL8LvnbBhpBOSP9ACaPF_dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Author>\r\n    <BirthDate>1998-12-24T00:00:00</BirthDate>\r\n    <City>\r\n        <Id>3</Id>\r\n    </City>\r\n    <Country>\r\n        <Id>3</Id>\r\n    </Country>\r\n    <Email>Al@gmail.com</Email>\r\n    <FirstName>Alexandre</FirstName>\r\n    <Id>1</Id>\r\n    <IdentityNumber>11111111111</IdentityNumber>\r\n    <LastName>Diuma</LastName>\r\n    <gender>MALE</gender>\r\n    <telephone>12315151</telephone>\r\n</Author>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44359/api/authors/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"authors",
+						""
+					]
+				},
+				"description": "Get Authors"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:44359/api/authors/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWthIiwicm9sZXMiOlsiUkVHVUxBUl9PUEVSQVRPUiIsIkFETUlOX09QRVJBVE9SIl0sImlhdCI6MTU3NzgxNjM5NSwiZXhwIjoxNTc3ODU5NTk1fQ.N0MA7wnMSTe0tflUmNZ1wL8LvnbBhpBOSP9ACaPF_dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Author>\r\n    <BirthDate>1998-12-24T00:00:00</BirthDate>\r\n    <City>\r\n        <Id>3</Id>\r\n    </City>\r\n    <Country>\r\n        <Id>3</Id>\r\n    </Country>\r\n    <Email>Al@gmail.com</Email>\r\n    <FirstName>Alexandre</FirstName>\r\n    <Id>1</Id>\r\n    <IdentityNumber>11111111111</IdentityNumber>\r\n    <LastName>Diuma</LastName>\r\n    <gender>MALE</gender>\r\n    <telephone>12315151</telephone>\r\n</Author>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44359/api/authors/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"authors",
+						"1"
+					]
+				},
+				"description": "Get Author By Id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:44359/api/authors/3",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWthIiwicm9sZXMiOlsiUkVHVUxBUl9PUEVSQVRPUiIsIkFETUlOX09QRVJBVE9SIl0sImlhdCI6MTU3NzgxNjM5NSwiZXhwIjoxNTc3ODU5NTk1fQ.N0MA7wnMSTe0tflUmNZ1wL8LvnbBhpBOSP9ACaPF_dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Author>\r\n    <BirthDate>1998-12-24T00:00:00</BirthDate>\r\n    <City>\r\n        <Id>3</Id>\r\n    </City>\r\n    <Country>\r\n        <Id>3</Id>\r\n    </Country>\r\n    <Email>Al@gmail.com</Email>\r\n    <FirstName>Alexandre</FirstName>\r\n    <Id>1</Id>\r\n    <IdentityNumber>11111111111</IdentityNumber>\r\n    <LastName>Diuma</LastName>\r\n    <gender>MALE</gender>\r\n    <telephone>12315151</telephone>\r\n</Author>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44359/api/authors/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"authors",
+						"3"
+					]
+				},
+				"description": "delete author"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:44359/api/authors/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWthIiwicm9sZXMiOlsiUkVHVUxBUl9PUEVSQVRPUiIsIkFETUlOX09QRVJBVE9SIl0sImlhdCI6MTU3NzgxNjM5NSwiZXhwIjoxNTc3ODU5NTk1fQ.N0MA7wnMSTe0tflUmNZ1wL8LvnbBhpBOSP9ACaPF_dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Author>\r\n    <BirthDate>1998-12-24T00:00:00</BirthDate>\r\n    <City>\r\n        <Id>3</Id>\r\n    </City>\r\n    <Country>\r\n        <Id>3</Id>\r\n    </Country>\r\n    <Email>Alex@gmail.com</Email>\r\n    <FirstName>Alexandre</FirstName>\r\n    <Id>2</Id>\r\n    <IdentityNumber>11111111111</IdentityNumber>\r\n    <LastName>Diuma</LastName>\r\n    <gender>MALE</gender>\r\n    <telephone>12315151</telephone>\r\n</Author>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44359/api/authors/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"authors",
+						"2"
+					]
+				},
+				"description": "put (update) author"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:44359/api/authors/2/addProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWthIiwicm9sZXMiOlsiUkVHVUxBUl9PUEVSQVRPUiIsIkFETUlOX09QRVJBVE9SIl0sImlhdCI6MTU3NzgxNjM5NSwiZXhwIjoxNTc3ODU5NTk1fQ.N0MA7wnMSTe0tflUmNZ1wL8LvnbBhpBOSP9ACaPF_dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<AddProductToAuthorRequest>\r\n    <ProductId>4</ProductId>\r\n</AddProductToAuthorRequest>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44359/api/authors/2/addProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"authors",
+						"2",
+						"addProduct"
+					]
+				},
+				"description": "Add product to author"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:44359/api/authors/2/removeProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWthIiwicm9sZXMiOlsiUkVHVUxBUl9PUEVSQVRPUiIsIkFETUlOX09QRVJBVE9SIl0sImlhdCI6MTU3NzgxNjM5NSwiZXhwIjoxNTc3ODU5NTk1fQ.N0MA7wnMSTe0tflUmNZ1wL8LvnbBhpBOSP9ACaPF_dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<AddProductToAuthorRequest>\r\n    <ProductId>1</ProductId>\r\n</AddProductToAuthorRequest>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44359/api/authors/2/removeProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"authors",
+						"2",
+						"removeProduct"
+					]
+				},
+				"description": "remove product from author"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:44359/api/products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWthIiwicm9sZXMiOlsiUkVHVUxBUl9PUEVSQVRPUiIsIkFETUlOX09QRVJBVE9SIl0sImlhdCI6MTU3NzgxNjM5NSwiZXhwIjoxNTc3ODU5NTk1fQ.N0MA7wnMSTe0tflUmNZ1wL8LvnbBhpBOSP9ACaPF_dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Product>\r\n    <Address>rigi 1 taro 1</Address>\r\n    <Isnb>1111111112111</Isnb>\r\n    <NumberOfpages>100</NumberOfpages>\r\n    <ProductType>BOOK</ProductType>\r\n    <PublishDate>2019-12-12T00:00:00</PublishDate>\r\n    <Publisher>\r\n        <Id>10</Id>\r\n    </Publisher>\r\n    <Title>sami mushketeri 2</Title>\r\n</Product>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44359/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"products"
+					]
+				},
+				"description": "get products"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:44359/api/products/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWthIiwicm9sZXMiOlsiUkVHVUxBUl9PUEVSQVRPUiIsIkFETUlOX09QRVJBVE9SIl0sImlhdCI6MTU3NzgxNjM5NSwiZXhwIjoxNTc3ODU5NTk1fQ.N0MA7wnMSTe0tflUmNZ1wL8LvnbBhpBOSP9ACaPF_dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Product>\r\n    <Address>rigi 1 taro 1</Address>\r\n    <Isnb>1111111112111</Isnb>\r\n    <NumberOfpages>100</NumberOfpages>\r\n    <ProductType>BOOK</ProductType>\r\n    <PublishDate>2019-12-12T00:00:00</PublishDate>\r\n    <Publisher>\r\n        <Id>10</Id>\r\n    </Publisher>\r\n    <Title>sami mushketeri 2</Title>\r\n</Product>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44359/api/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				},
+				"description": "get product by id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:44359/api/products/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWthIiwicm9sZXMiOlsiUkVHVUxBUl9PUEVSQVRPUiIsIkFETUlOX09QRVJBVE9SIl0sImlhdCI6MTU3NzgxNjM5NSwiZXhwIjoxNTc3ODU5NTk1fQ.N0MA7wnMSTe0tflUmNZ1wL8LvnbBhpBOSP9ACaPF_dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Product >\r\n    <Address>http://ragaca.com</Address>\r\n    <Annotation>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Annotation>\r\n    <Id>1</Id>\r\n    <Isnb>1111111111111</Isnb>\r\n    <NumberOfpages>100</NumberOfpages>\r\n    <ProductType>ARTICLE</ProductType>\r\n    <PublishDate>2019-12-12T00:00:00</PublishDate>\r\n    <Publisher >\r\n        <Id>1</Id>\r\n        <Name>Palitra</Name>\r\n    </Publisher>\r\n    <Title>Gau: salobie tu sachebureke?</Title>\r\n</Product>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44359/api/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				},
+				"description": "pud product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:44359/api/products/5",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWthIiwicm9sZXMiOlsiUkVHVUxBUl9PUEVSQVRPUiIsIkFETUlOX09QRVJBVE9SIl0sImlhdCI6MTU3NzgxNjM5NSwiZXhwIjoxNTc3ODU5NTk1fQ.N0MA7wnMSTe0tflUmNZ1wL8LvnbBhpBOSP9ACaPF_dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Product >\r\n    <Address>aaa</Address>\r\n    <Annotation>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Annotation>\r\n    <Id>1</Id>\r\n    <Isnb>1111112221111</Isnb>\r\n    <NumberOfpages>200</NumberOfpages>\r\n    <ProductType>RESOURCE</ProductType>\r\n    <PublishDate>2019-12-12T00:00:00</PublishDate>\r\n    <Publisher >\r\n        <Id>10</Id>\r\n    </Publisher>\r\n    <Title>resursi</Title>\r\n</Product>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44359/api/products/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"products",
+						"5"
+					]
+				},
+				"description": "delete product"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
